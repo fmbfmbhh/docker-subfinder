@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+#启动trackers更新任务
+exec \
+	s6-setuidgid abc cron -f -L /dev/null

@@ -12,9 +12,11 @@ fi
 
 crontab -u abc /config/subfinder-cron
 
+touch /tmp/1.log
 # permissions
 chown -R abc:abc \
     /config \
     /media
 
 chmod a+x /subfinder/search-subtitles.sh
+chmod 777 /tmp/1.log

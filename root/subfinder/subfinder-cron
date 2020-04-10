@@ -1,1 +1,1 @@
-*/60 * * * * /bin/bash /subfinder/search-subtitles.sh
+*/1 * * * * /bin/bash /subfinder/search-subtitles.sh
