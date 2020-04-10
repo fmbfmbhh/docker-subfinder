@@ -19,4 +19,7 @@ chown -R abc:abc \
     /media
 
 chmod a+x /subfinder/search-subtitles.sh
+<<<<<<< Updated upstream
 chmod 777 /tmp/1.log
+=======
+>>>>>>> Stashed changes
