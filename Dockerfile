@@ -6,8 +6,8 @@ LABEL maintainer="NG6"
 ENV TZ=Asia/Shanghai TASK=1d PUID=1026 PGID=100
 
 # install subfinder
-RUN apk add --no-cache unrar tzdata bash curl \
-&&  pip install subfinder
+RUN apk update && apk add --no-cache unrar tzdata bash curl \
+&& pip install subfinder
 
 # set version for s6 overlay
 ARG OVERLAY_VERSION="v2.0.0.1"
@@ -29,7 +29,7 @@ RUN echo "**** add s6 overlay ****" && \
 	curl && \
  rm -rf \
 	/tmp/*
-	
+
 # copy local files
 COPY root/ /
 
